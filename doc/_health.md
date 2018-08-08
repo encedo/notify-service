@@ -1,9 +1,9 @@
 # Health check
 
-Anty-fraud feature is fully anonymous! Every power-up or every 24h HEM generate unieque session ID and hash of this ID via HMAC session ID with Device ID. This simple algorithm allows remote wipeout of the HEM (e.g. when reported as stolen) by reporting Device ID. There is no way to track not reported HEM (Device ID cannot be discover).
+Anti-fraud feature is fully anonymous! Every power-up or every 24h, HEM generates unique session ID and hash of this ID via HMAC session ID with Device ID. This simple algorithm allows remote wipeout of the HEM (e.g. when reported as stolen) by reporting Device ID. There is no way to track not reported HEM (Device ID cannot be discovered).
 
 
-## Health check a.ka. anty-fraud system + firmware version check
+## Health check a.k.a. anti-fraud system + firmware version check
 
 Encedo HEM call this endpoint to verify fraud status. Firmware version can be also checked (option) by providing firmware version hash id. This endpoint should be called frequently by HEM local management application.
 
@@ -35,7 +35,7 @@ curl -X POST "https://notify.encedo.com/health"
 }
 ```
 
-> In this case, HEM is marked as stolen and remote action 'wipeout' should be perform:
+> In this case, HEM is marked as stolen and remote action 'wipeout' should be performed:
 
 ```json
 {
@@ -102,7 +102,7 @@ curl "https://encedokey.com/api/health"
 ```
 
 
-<aside class="warning">Health check status should be router back to encedo HEM.</aside>
+<aside class="warning">Health check status should be routed back to encedo HEM.</aside>
 
 > This Encedo HEM endpoint accept health status:
 

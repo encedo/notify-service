@@ -48,13 +48,13 @@ Code | Meaning
 
 
 <aside class="success">
-Received <code>&lt;url&gt;</code> should be render as QR code. Modile App can scan code and get encoded link directly in fast and convienience way for users.</aside>
+Received <code>&lt;url&gt;</code> should be rendered as QR code. Mobile App can scan code and get encoded link directly in fast and convienient way for users.</aside>
 
 
 <aside class="warning">
-Parameters to send as POST data needs to be retrieve from Encedo HEM.</aside>
+Parameters to send as POST data need to be retrieved from Encedo HEM.</aside>
 
-Encedo HEM subsciption request looks like this:
+Encedo HEM subscription request looks like this:
 
 ```shell
 curl "https://encedokey.com/api/2FA/subscribe"
@@ -86,10 +86,10 @@ curl "https://encedokey.com/api/2FA/subscribe"
 
 ## Phase 2: Mobile app challenge
 
-Mobile App will get direct link to this endpoint. Long and complicated <code>&lt;ID&gt;</code> can be retrive automaticly. This endpoint is called by Mobiel Application only.
+Mobile App will get direct link to this endpoint. Long and complicated <code>&lt;ID&gt;</code> can be retrived automaticly. This endpoint is called by Mobile Application only.
 
 ```shell
-# This link will available via QR code scan
+# This link will be available via QR code scan
 curl "https://notify.encedo.com/register/70vt7sYLl6ZeMN71FCvJVL2K...O6jtLh7m70C"
 ```
 
@@ -214,7 +214,7 @@ Mobile App generate curve25519 keypair: private part (<code>&lt;aid_prv&gt;</cod
 
 
 <aside class="success">
-After this query, link between Encedo and Mobile App is setup but not confirm. If posted <code>&lt;res&gt;</code> is correct, mobile application will received final confirmation via FCM push-notification. Till then, link should be consider as 'pending'.</aside>
+After this query, link between Encedo and Mobile App is setup but not confirmed. If posted <code>&lt;res&gt;</code> is correct, mobile application will receive final confirmation via FCM push-notification. Till then, link should be considered as 'pending'.</aside>
 
 
 
@@ -231,7 +231,7 @@ After this query, link between Encedo and Mobile App is setup but not confirm. I
 
 ## Phase 4: Encedo status check
 
-This endpoint called by subsciber is used to check, if Mobile Application finalise registration process. 
+This endpoint called by subscriber is used to check if Mobile Application finalizes registration process. 
 
 ```shell
 # This link will available via QR code scan
@@ -287,7 +287,7 @@ Code | Meaning
 
 ## Phase 5. Encedo validation
 
-Last step of generating parinng between Encedo and Mobile App is the final confirmation. This endpoint is called by subscriber.
+Last step of generating pairing between Encedo and Mobile App is the final confirmation. This endpoint is called by subscriber.
 
 ```shell
 curl -X POST "https://notify.encedo.com/subscribe/70vt7sYLl6ZeMN71FCvJVL2K...O6jtLh7m70C"

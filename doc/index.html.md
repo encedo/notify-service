@@ -21,9 +21,9 @@ search: true
 Welcome to the Encedo Notification Services API! Notification Service is a broker type service, acting as a proxy between Encedo HEM and Managment Mobile Application. Main purpose of the service is to allow interchange of data between HEM and Mobile Apps that allow 2FA, remote managment and governance endpoint.
 
 
-Encedo Notification Services is based on RESTful API. Server do not hold any critical or confidential data e.g. private keys or personal data. The only piece of data store on servers disks are public keys of HEM and Mobile App, and the association between them.
+Encedo Notification Services is based on RESTful API. Server does not hold any critical or confidential data e.g. private keys or personal data. The only piece of data stored on servers' disks are public keys of HEM and Mobile App, and the association between them.
 
-Source code of this API is available on [GitHub](https://github.com/encedo/notify-services). Feel free to clone, review, criticise or propose new featureas or enhancement. If you have found a bug, follow responible discosure practice and report details to us first via bugbounty@encedo.com. Expect reward!
+Source code of this API is available on [GitHub](https://github.com/encedo/notify-services). Feel free to clone, review, criticise or propose new features or enhancements. If you have found a bug, please follow responible discosure practice and report details to us first via bugbounty@encedo.com. Expect reward!
 
 
 
@@ -41,6 +41,6 @@ Base64Encode(bin) - base64 binary to string encoder
 
 # Authentication
 
-Access to Notification Services is authorize based on digital signature over challenge-response scheme. More details about this mechanism is described below together with relate endpoints describtions.
+Access to Notification Services is authorized based on digital signature over challenge-response scheme. More details about this mechanism is described below together with related endpoints descriptions.
 
 
